@@ -1,0 +1,92 @@
+
+/* CELULARES */
+* {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(171,71,122,0.8827906162464986) 64%);
+}
+body{
+    border: 2px solid rgb(252, 219, 247);
+    flex-wrap: wrap;
+    background-color: rgb(235, 153, 255);
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: auto;
+}
+
+header,
+nav,
+main,
+aside, 
+footer {
+    border:1px solid rgb(252, 219, 247);
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
+
+header {
+    height: 100px;
+}
+
+nav {
+    height: 80px;
+    line-height: 80px;
+    justify-content: space-around;
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(252, 250, 251), rgb(255, 49, 245)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    height: 100px;
+    line-height: 90px;
+}
+.negrita {
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+   
+}
+.raya {
+    text-decoration: none;
+}
+
+.img {
+    border-style: groove;
+}
+
+/* TABLETA MOVIL */
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 768px;
+        
+    }
+    
+}
+/* COMPUTADORES */
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        flex-basis: 70%;
+        padding: 6px;
+    }
+    aside {
+        flex-basis: 30%;
+        padding: 6px;
+        justify-content: center;
+    }
+}
